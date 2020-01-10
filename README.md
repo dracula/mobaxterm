@@ -2,15 +2,11 @@
 
 > A dark theme for [MobaXterm](https://mobaxterm.mobatek.net).
 
-![Screenshot](./dracula-mobaxterm.png)
+![Screenshot](./screenshot.png)
 
 ## Install
 
-~~All instructions can be found at [draculatheme.com/mobaxterm](https://draculatheme.com/mobaxterm).~~
-
-Open your `MobaXterm.ini` file (normally at `Documents/MobaXterm/MobaXterm.ini`), and replace the `[Colors]` section with the contents of the [file in this repo](./MobaXterm.ini).
-
-This will change the default colour scheme - saved sessions will need to be recreated for it to take effect.
+All instructions can be found at [draculatheme.com/mobaxterm](https://draculatheme.com/mobaxterm).
 
 ## Team
 
