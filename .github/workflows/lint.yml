@@ -1,0 +1,25 @@
+name: Lint Repo
+
+on:
+  push:
+    branches-ignore:
+      - master
+  pull_request:
+    branches: 
+      - master
+    
+jobs:
+  build:
+    name: Run lint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Lint Code Base
+        uses: docker://ghcr.io/github/super-linter:slim-v4
+        env:
+          VALIDATE_ALL_CODEBASE: true
+          DEFAULT_BRANCH: master
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
